@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ARImovie</title> 
+    <style>
+        * {
+            padding: 0; 
+            margin: 0;
+            box-sizing: border-box; 
+            font-family: sans-serif;
+        } 
+        body {
+            height: 100vh;
+            width: 100%;
+            background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0, 0.3)), url('../img/background3.jpg'); 
+            background-size: cover; 
+            background-position: center;
+        }
+        .box {
+            background: #e80c0c;
+            color: #000000; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 340px;
+            height: 440px;
+            transform: translate(-50%, -50%);
+            padding: 60px 40px;
+            border-radius: 30px;
+        }
+        .main-img {
+            position: absolute; 
+            width: 80px; 
+            height: 80px; 
+            top: -50px;
+            left: calc(50% - 50px);
+        }
+        .box h1 {
+            text-align: center; 
+            font-size: 30px; 
+            padding: 0 0 30px; 
+            font-weight: 800;
+        }
+        .box p {
+            color: #000; 
+            font-weight: bold;
+        } 
+        .box input { 
+            margin-bottom: 15px; 
+            width: 100%;
+        }
+        .box input[type="text"], input[type="Password"] {
+            border: none;
+            border-bottom: 1px solid #000;
+            outline: none;
+            height: 30px;
+            font-size: 15px;
+        }
+        .box input[type="submit"] {
+            border: none; 
+            height: 45px;
+            background: #000;
+            color: #fff6f6;
+            font-size: 17px;
+            border-radius: 30px; 
+            text-transform: capitalize;
+        }
+        .box input[type="submit"]:hover {
+            opacity: 0.8;
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        a {
+            display: block;
+            font-size: 15px;
+            color: rgb(0, 0, 0); 
+            line-height: 25px;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #000;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="https://sun1-88.userapi.com/s/v1/ig2/YYu0TwDdCTnx5j699PAqmMCY-NX-MBgmTmXfklGtQxwiIbunlyYo_5vvb9--pJ_2WxFWRBf1dZFYj1d1QuaxQ1jF.jpg?size=900x900&quality=95&crop=0,0,900,900&ava=1" class="main-img">
+        <h1>Sign In</h1>
+        <form>
+            <p>Username</p>
+            <input type="text" name="" placeholder="Username">
+            <p>Password</p>
+            <input type="Password" name="" placeholder="Password">
+            <input type="submit" name="" value="Login">
+        </form>
+    </div>
+</body> 
+</html>
